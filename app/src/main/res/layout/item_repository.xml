@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_repository_name"
+        style="@style/TvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title"
+        app:layout_constraintBottom_toTopOf="@+id/tv_repository_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Nome Repositório" />
+
+    <TextView
+        android:id="@+id/tv_repository_description"
+        style="@style/TvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/description"
+        app:layout_constraintBottom_toTopOf="@+id/tv_forks_quantity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_repository_name"
+        tools:text="Descrição do repositório lorem ipsum dolor sit amet lorem ipsum dolor...Descrição do repositório lorem ipsum dolor sit amet lorem ipsum dolor...Descrição do repositório lorem ipsum dolor sit amet lorem ipsum dolor...Descrição do repositório lorem ipsum dolor sit amet lorem ipsum dolor...Descrição do repositório lorem ipsum dolor sit amet lorem ipsum dolor...Descrição do repositório lorem ipsum dolor sit amet lorem ipsum dolor...Descrição do repositório lorem ipsum dolor sit amet lorem ipsum dolor...Descrição do repositório lorem ipsum dolor sit amet lorem ipsum dolor...Descrição do repositório lorem ipsum dolor sit amet lorem ipsum dolor...Descrição do repositório lorem ipsum dolor sit amet lorem ipsum dolor...Descrição do repositório lorem ipsum dolor sit amet lorem ipsum dolor..." />
+
+    <ImageView
+        android:id="@+id/iv_fork"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:contentDescription="@string/lbl_fork"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_forks_quantity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_forks_quantity"
+        app:srcCompat="@drawable/ic_fork"
+        app:tint="@color/secondaryDarkColor" />
+
+    <TextView
+        android:id="@+id/tv_forks_quantity"
+        style="@style/TvExtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_fork"
+        app:layout_constraintTop_toBottomOf="@+id/tv_repository_description"
+        tools:text="640" />
+
+    <ImageView
+        android:id="@+id/iv_star"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/lbl_star"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_forks_quantity"
+        app:layout_constraintStart_toEndOf="@+id/tv_forks_quantity"
+        app:layout_constraintTop_toTopOf="@+id/tv_forks_quantity"
+        app:srcCompat="@drawable/ic_full_star"
+        app:tint="@color/secondaryDarkColor" />
+
+    <TextView
+        android:id="@+id/tv_stars_quantity"
+        style="@style/TvExtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_star"
+        app:layout_constraintStart_toEndOf="@+id/iv_star"
+        app:layout_constraintTop_toTopOf="@+id/iv_star"
+        tools:text="98" />
+</androidx.constraintlayout.widget.ConstraintLayout>

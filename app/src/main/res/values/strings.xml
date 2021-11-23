@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mobile Dev Test</string>
+    <string name="lbl_star">Icone de estrela</string>
+    <string name="lbl_fork">Icone de rota</string>
+    <string name="sort_name">Ord. Nome</string>
+    <string name="sort_start">Ord. Estrela</string>
+    <string name="hint_search_user_or_repository">Pesquisar...</string>
+    <string name="non_items">Nenhum repositorio corresponde</string>
+</resources>
